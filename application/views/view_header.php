@@ -300,64 +300,6 @@ $success_message = '';
                                     </li>
                                     <?php endif; ?>
 
-                                    <?php if($arr_menu[2] == 'Show'): ?>
-                                    <li class="<?php if($class_name == 'about') {echo 'active';} ?>">
-                                        <a href="<?php echo base_url().M_REWRITE; ?>about"><?php echo MENU_ABOUT; ?></a>
-                                    </li>
-                                    <?php endif; ?>                                    
-
-                                    <?php if($arr_menu[3] == 'Show'): ?>
-                                    <li class="<?php if($class_name == 'service') {echo 'active';} ?>">
-                                        <a href="<?php echo base_url().M_REWRITE; ?>service"><?php echo MENU_SERVICE; ?></a>
-                                    </li>
-                                    <?php endif; ?>
-
-
-                                    <?php if( ($arr_menu[5] == 'Show') || ($arr_menu[6] == 'Show') || ($arr_menu[11] == 'Show') || ($arr_menu[4] == 'Show') || ($arr_menu[13] == 'Show') ): ?>
-                                    <li><a href="javascript:void;"><?php echo MENU_PAGES; ?> <span class="caret"></span></a>
-                                        <ul class="submenu">
-
-                                            <?php if($arr_menu[5] == 'Show'): ?>
-                                            <li>
-                                                <a href="<?php echo base_url().M_REWRITE; ?>photo-gallery"><?php echo MENU_PHOTO_GALLERY; ?></a>
-                                            </li>
-                                            <?php endif; ?>
-
-                                            <?php if($arr_menu[6] == 'Show'): ?>
-                                            <li>
-                                                <a href="<?php echo base_url().M_REWRITE; ?>video-gallery"><?php echo MENU_VIDEO_GALLERY; ?></a>
-                                            </li>
-                                            <?php endif; ?>
-
-                                            <?php if($arr_menu[11] == 'Show'): ?>
-                                            <li>
-                                                <a href="<?php echo base_url().M_REWRITE; ?>team-members"><?php echo MENU_TEAM_MEMBERS; ?></a>
-                                            </li>
-                                            <?php endif; ?>
-
-                                            <?php if($arr_menu[4] == 'Show'): ?>
-                                            <li>
-                                                <a href="<?php echo base_url().M_REWRITE; ?>faq"><?php echo MENU_FAQ; ?></a>
-                                            </li>
-                                            <?php endif; ?>
-
-
-                                            <?php if($arr_menu[13] == 'Show'): ?>
-                                            <?php
-                                            foreach($all_dynamic_page as $rr)
-                                            {
-                                                ?>
-                                                <li><a href="<?php echo base_url().M_REWRITE; ?>page/<?php echo safe_data($rr['slug']); ?>"><?php echo safe_data($rr['name']); ?></a></li>
-                                                <?php
-                                            }
-                                            ?>
-                                            <?php endif; ?>
-
-                                        </ul>
-                                    </li>
-                                    <?php endif; ?>
-
-
                                     <?php if($arr_menu[12] == 'Show'): ?>
                                     <li class="<?php if($class_name == 'shop') {echo 'active';} ?>">
                                         <a href="<?php echo base_url().M_REWRITE; ?>shop"><?php echo MENU_SHOP; ?></a>
